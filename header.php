@@ -56,7 +56,3 @@
 		      </ul>
 		    </div>
 		  </header>
-
-      <section role="main" class="container">
-
-		</header>
