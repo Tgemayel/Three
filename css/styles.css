@@ -132,7 +132,7 @@ section[role="main"]{
   }
     article header{
       overflow: hidden;
-      margin-bottom: 16px;
+      margin-bottom: 5px;
     }
       article header h1,
       article header h2{
