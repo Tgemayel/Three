@@ -1,0 +1,5 @@
+Theme name:    Three
+Description:   Custom Anchor Theme for Version 3.
+Author name:   Toni Gemayel
+Author site:   http://tonigemayel.com
+License:       http://licence.visualidiot.com

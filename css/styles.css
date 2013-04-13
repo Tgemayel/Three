@@ -1,0 +1,470 @@
+/*
+  Toni Gemayel v3
+  Based off https://github.com/michieldegraaf/blog.
+*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog{
+  display: block;
+}
+*{
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+
+/* Basics
+ *************************************/
+
+body{
+  font-family: "minion-pro", Adobe Garamond Pro, Georgia, Times, serif;
+  font-size: 100%;
+  line-height: 200%;
+  vertical-align: baseline;
+  color: #18191a;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+a{
+  cursor: pointer;
+  color: #000;
+  white-space: nowrap;
+  text-decoration: none;
+  -webkit-transition: all .25s;
+     -moz-transition: all .25s;
+          transition: all .25s;
+}
+article a,
+.bio a{
+  border-bottom: 1px solid rgba(0,0,0,.5);
+}
+  article a:hover,
+  .bio a:hover{
+    border-color: rgba(0,0,0,0);
+    background: #fff4cc;
+  }
+h1,h2,h3,h4{
+  font-family: "brandon-grotesque", Futura, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 500;
+}
+code{
+  font-family: Lucida Console, Monaco, Andale Mono, monospace;
+}
+.container{
+  overflow: hidden;
+  width: 720px;
+  margin: 0 auto;
+}
+
+/* Header
+ *************************************/
+
+header[role="banner"]{
+  overflow: hidden;
+  padding: 40px 0 50px 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+  .logo{
+    display: inline-block;
+    width: 147px;
+    height: 147px;
+    border-radius: 200px 200px 200px 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset, 0 0 2px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-top: 20px;
+    border: 0 none;
+    background: url(http://zerply.com/profile_images/0/763/big.jpg?1347419858) no-repeat center center;
+  }
+    .logo img{
+      display: none;
+    }
+  .about{
+    margin-top: 20px;
+    font-size: 1.125em;
+    font-family: "minion-pro", Adobe Garamond Pro, Georgia, Times, serif;
+    font-weight: normal;
+    line-height: 1.4em;
+    color: #000;
+    text-align: center;
+    text-shadow: 0 1px rgba(255,255,255,.4);
+  }
+    .about span{
+      font-style: italic;
+    }
+  .headlinks{
+    list-style: none;
+    overflow: hidden;
+  }
+    .headlinks li{
+      display: inline-block;
+      margin: 20px 5px 0 5px;
+    }
+      .headlinks a{
+        display: block;
+        color: #000;
+        text-shadow: 0 1px rgba(255,255,255,.4);
+        border: 0 none;
+        opacity: .5;
+      }
+        .headlinks a:hover{
+          opacity: 1;
+        }
+        .headlinks a span{
+          display: none;
+        }
+header[role="banner"]#post-head{
+  padding: 10px 0 30px 0;
+}
+  #post-head .logo{
+    display: block;
+    float: left;
+  }
+
+/* Articles
+ *************************************/
+
+section[role="main"]{
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+  article{
+    margin-top: 80px;
+  }
+    article header{
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+      article header h1,
+      article header h2{
+        font-size: 2.4em;
+        line-height: 1.6em;
+      }
+        article header h1 a,
+        article header h2 a{
+          border: 0 none;
+          white-space: normal;
+        }
+          article header h1 a:hover,
+          article header h2 a:hover{
+            background: #fff4cc;
+          }
+      article time{
+        display: block;
+        margin-bottom: 8px;
+        color: #a4abb2;
+        font-family: "brandon-grotesque", Futura, Helvetica Neue, Helvetica, sans-serif;
+        font-size: .75em;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+      }
+    article .content{
+      font-size: 1.25em;
+    }
+      article .content h2,
+      article .content h3{
+        margin: 30px 0;
+      }
+      article .content h2{
+        font-size: 1.4em;
+      }
+      article .content h3{
+        font-size: 1.2em;
+      }
+      article .content p{
+        margin-bottom: 20px;
+      }
+      article .content figure{
+        width: 100%;
+        margin: 30px 0;
+      }
+        article .content figure img{
+          display: block;
+          width: 100%;
+          margin-top: 20px;
+        }
+        article .content figure figcaption{
+          display: block;
+          margin-top: 20px;
+          font-style: italic;
+        }
+      article .content ul,
+      article .content ol{
+        margin: 0 0 20px 40px;
+      }
+        article .content p code{
+          display: inline-block;
+          margin: 0 4px;
+          padding: 1px 12px;
+          font-size: .65em;
+          white-space: nowrap;
+          text-shadow: 0 1px rgba(255,255,255,.2);
+          background: #fff4cc;
+          -webkit-border-radius: 3px;
+             -moz-border-radius: 3px;
+                  border-radius: 3px;
+          -webkit-box-shadow: 0 -1px 1px rgba(0,0,0,.1) inset;
+             -moz-box-shadow: 0 -1px 1px rgba(0,0,0,.1) inset;
+                  box-shadow: 0 -1px 1px rgba(0,0,0,.1) inset;
+        }
+        article .content .intro{
+          margin-top: 0;
+        }
+          article .content .intro strong{
+            font-weight: normal;
+          }
+      article .content .prettyprint{
+        display: block;
+        margin-bottom: 20px;
+        padding: 12px 18px;
+        line-height: 1.3em;
+        color: #f5f9ff;
+        text-shadow: 0 1px 1px rgba(0,0,0,.2);
+        background: #30353d;
+        -webkit-border-radius: 3px;
+           -moz-border-radius: 3px;
+                border-radius: 3px;
+        -webkit-box-shadow: 0 -1px 2px rgba(0,0,0,.8) inset;
+           -moz-box-shadow: 0 -1px 2px rgba(0,0,0,.8) inset;
+                box-shadow: 0 -1px 2px rgba(0,0,0,.8) inset;
+      }
+      article .content .read-more{
+        margin-top: 10px;
+      }
+
+/* Gist
+ *************************************/
+
+article .content .gist{
+  color: #f5f9ff;
+}
+  article .content .gist .gist-file{
+    margin-bottom: 20px;
+    border: 0 none;
+  }
+    article .content .gist .gist-file .gist-data{
+      font-family: Monaco, Andale Mono, monospace;
+      font-size: 13px;
+      line-height: 20px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.2);
+      background: #30353d;
+      -webkit-border-radius: 3px;
+         -moz-border-radius: 3px;
+              border-radius: 3px;
+      -webkit-box-shadow: 0 -1px 2px rgba(0,0,0,.5) inset;
+         -moz-box-shadow: 0 -1px 2px rgba(0,0,0,.5) inset;
+              box-shadow: 0 -1px 2px rgba(0,0,0,.5) inset;
+    }
+      article .content .gist .gist-file .gist-data .line_numbers{
+        padding: 20px;
+        color: #6e7480;
+        border: 0 none;
+        background: #1b1f24;
+        -webkit-border-top-left-radius: 3px;
+           -moz-border-top-left-radius: 3px;
+                border-top-left-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+           -moz-border-bottom-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+      }
+      article .content .gist .gist-file .gist-data .line_data{
+        padding: 20px !important;
+      }
+        article .content .gist .gist-file .gist-data pre{
+          font-family: Monaco, Andale Mono, monospace;
+          font-size: 13px;
+        }
+        .gist .gist-syntax .na,
+        .gist .gist-syntax .k{
+          color: #fff4d3;
+        }
+        .gist .gist-syntax .kt,
+        .gist .gist-syntax .m,
+        .gist .gist-syntax .mi,
+        .gist .gist-syntax .no{
+          color: #00ffbe;
+        }
+        .gist .gist-syntax .n,
+        .gist .gist-syntax .s1,
+        .gist .gist-syntax .s2,
+        .gist .gist-syntax .sx{
+          color: #ff4184;
+        }
+        .gist .gist-syntax .nc,
+        .gist .gist-syntax .nt{
+          color: #84d6ed;
+        }
+        .gist .gist-syntax .nd,
+        .gist .gist-syntax .nf{
+          color: #c0aafc;
+        }
+        .gist .gist-syntax .nv{
+          color: #fb8a95;
+        }
+        .gist .gist-syntax .nd,
+        .gist .gist-syntax .o{
+          color: #f5f9ff;
+        }
+        .gist .gist-syntax .na, .gist .gist-syntax .k, .gist .gist-syntax .kt, .gist .gist-syntax .m, .gist .gist-syntax .mi, .gist .gist-syntax .no, .gist .gist-syntax .n, .gist .gist-syntax .s1, .gist .gist-syntax .s2, .gist .gist-syntax .sx, .gist .gist-syntax .nc, .gist .gist-syntax .nt, .gist .gist-syntax .nd, .gist .gist-syntax .nf, .gist .gist-syntax .nv, .gist .gist-syntax .nd, .gist .gist-syntax .o{
+          font-weight: normal !important;
+        }
+article .content .gist .gist-meta{
+  display: none;
+}
+
+/* Article footer
+ *************************************/
+
+.post-foot{
+  margin-top: 40px;
+  line-height: 130%;
+}
+  .post-foot-top{
+    overflow: hidden;
+    padding: 20px 0;
+    text-align: right;
+    line-height: 120%;
+    border-bottom: 1px solid #ddd;
+  }
+    .link-back{
+      display: block;
+      float: left;
+    }
+      .link-back:hover{
+        background: #fff4cc;
+      }
+  .bio{
+    margin-top: 60px;
+    line-height: 165%
+  }
+    .bio h5{
+      margin: 0 0 10px 160px;
+      font-size: 1.125em;
+      font-style: italic;
+    }
+    .bio p{
+      margin-left: 160px;
+      font-size: 1.125em;
+    }
+      .bio p span{
+        font-style: italic
+      }
+    .bio ul{
+      overflow: hidden;
+      margin: 10px 0 0 160px;
+      font-size: 1.125em;
+    }
+      .bio ul li{
+        display: block;
+        float: left;
+        margin-right: 15px;
+      }
+        .bio a i{
+          display: inline-block;
+          margin-right: 5px;
+          font-size: 60%;
+        }
+    .bio img{
+      display: block;
+      float: left;
+      width: 120px;
+      height: 120px;
+      -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+              border-radius: 50%;
+    }
+
+/* Footer
+ *************************************/
+
+footer[role="footer"]{
+  padding: 50px 0;
+  border-top: 1px solid #ddd;
+}
+  footer[role="footer"] p{
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    color: #666;
+  }
+    footer[role="footer"] p a{
+      padding-bottom: 2px;
+    }
+
+/* Responsiveness
+ *************************************/
+
+@media screen and (max-width: 760px){
+  body{
+    font-size: 90%;
+  }
+  .container{
+    width: auto;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 480px){
+  body{
+    font-size: 80%;
+  }
+  header[role="banner"]{
+    padding: 10px 0 20px 0;
+  }
+  header[role="banner"]#post-head{
+    padding: 0 0 20px 0;
+  }
+  .about{
+    margin-top: 15px;
+  }
+  section[role="main"]{
+    padding-bottom: 50px;
+  }
+    article{
+      margin-top: 20px;
+    }
+      article header h1,
+      article header h2{
+        font-size: 1.9em;
+      }
+      article .content h2,
+      article .content h3{
+        margin: 15px 0;
+      }
+      article .content .gist .gist-file .gist-data pre{
+        font-size: 70% !important;
+      }
+  .post-foot{
+    margin-top: 30px;
+  }
+    .post-foot-top{
+      padding: 15px 0;
+    }
+    .bio{
+      margin-top: 30px;
+    }
+      .bio h5,
+      .bio p{
+        margin-left: 80px;
+      }
+      .bio ul{
+        margin: 10px 0 0 80px;
+        overflow: hidden;
+      }
+      .bio img{
+        width: 60px;
+        height: 60px;
+      }
+  footer[role="footer"]{
+    padding: 30px 0;
+  }
+}
+
+/* Retina
+ *************************************/
+
+@media screen and (-webkit-min-device-pixel-ratio : 1.5),screen and (min-device-pixel-ratio : 1.5){
+  header[role="banner"] .logo{
+    background-image: url(http://assets.michieldegraaf.com/blog/img/logo-black@2x.png);
+    background-size: 37px 34px;
+  }
+}

@@ -1,0 +1,9 @@
+/* Fix link borders
+ *************************************/
+
+article a{
+  border-bottom: 1px solid #aaa;
+}
+  article a:hover{
+    border-color: #fff;
+  }
