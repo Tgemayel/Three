@@ -43,8 +43,8 @@
 		    <div class="container">
 		      <a href="<?php echo base_url(); ?>" class="logo"><img src="http://zerply.com/profile_images/0/763/big.jpg?1347419858" /></a>
 		      <h1 class="about">
-		        My name is Toni Gemayel, I work at <a href="http://www.banyan.co">Banyan</a>.<br>
-		        Im passionate about frontend code, entrepreneurship, design, <span>&amp;</span> startups.
+		        My name is Toni Gemayel, I cofounded <a href="http://www.banyan.co">Banyan</a>.<br>
+		        Im passionate about entrepreneurship, design, <span>&amp;</span> startups.
 		      </h1>
 		      <ul class="headlinks">
 		        <li class="twitter">
@@ -59,10 +59,4 @@
 
       <section role="main" class="container">
 
-						
-						<li class="tray">
-							<a href="#tray" class="linky"><img src="<?php echo theme_url('img/categories.png'); ?>" alt="Categories" title="View my posts by category"></a>
-						</li>
-					</ul>
-				</nav>
-			</header>
+		</header>
