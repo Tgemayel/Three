@@ -1,20 +1,7 @@
-		<div class="wrap">
-	            <footer id="bottom">
-	                <small>&copy; <?php echo date('Y'); ?> <?php echo site_name(); ?>. All rights reserved.</small>
-	
-	                <ul role="navigation">
-	                    <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
-	                    <?php if(twitter_account()): ?>
-	                    <li><a href="<?php echo twitter_url(); ?>">@<?php echo twitter_account(); ?></a></li>
-	                    <?php endif; ?>
-	
-	                    <li><a href="<?php echo admin_url(); ?>" title="Administer your site!">Admin area</a></li>
-	
-	                    <li><a href="/" title="Return to my website.">Home</a></li>
-	                </ul>
-	            </footer>
-	
-	        </div>
-        </div>
-    </body>
+  <footer role="footer">	
+    <section class="container">
+    <p><?php echo site_name(); ?>. - Running on <a href="http://anchorcms.com">Anchor</a>, source on <a href="https://github.com/Tgemayel">Github</a>.</p>
+    </section>
+  </footer>
+</body>
 </html>
