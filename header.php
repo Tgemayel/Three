@@ -30,6 +30,9 @@
 	    <meta property="og:site_name" content="<?php echo site_name(); ?>">
 	    <meta property="og:description" content="<?php echo site_description(); ?>">
 
+    <script type="text/javascript" src="//use.typekit.net/esd4bji.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 		<?php if(customised()): ?>
 		    <!-- Custom CSS -->
     		<style><?php echo article_css(); ?></style>
@@ -41,18 +44,9 @@
 	<body class="<?php echo body_class(); ?>">
       <header role="banner">
 		    <div class="container">
-		      <a href="<?php echo base_url(); ?>" class="logo"><img src="http://zerply.com/profile_images/0/763/big.jpg?1347419858" /></a>
-		      <h1 class="about">
-		        My name is Toni Gemayel, I cofounded <a href="http://www.banyan.co">Banyan</a>.<br>
-		        Im passionate about entrepreneurship, design, <span>&amp;</span> startups.
-		      </h1>
-		      <ul class="headlinks">
-		        <li class="twitter">
-		          <a href="http://twitter.com/tonigemayel"><i class="ss-icon">Twitter</i></a>
-		        </li>
-		        <li class="dribbble">
-		          <a href="http://dribbble.com/twogiraffes"><i class="ss-icon">Dribbble</i></a>
-		        </li>
-		      </ul>
-		    </div>
-		  </header>
+		      <section class="bio">
+						<img src="http://f.cl.ly/items/3M2d0z0F2X2G2Y2o183f/toni.jpg">
+							<h5>Toni Gemayel</h5>
+								<p> I cofounded <a href="http://www.banyan.co">Banyan</a> to change the way scientists works. Im passionate about design, startups, and entrepreneurship.</p>
+				    </div>
+				  </header>
