@@ -61,7 +61,6 @@ code{
 header[role="banner"]{
   overflow: hidden;
   padding: 40px 0 50px 0;
-  text-align: center;
   border-bottom: 1px solid #ddd;
 }
   .logo{
@@ -339,8 +338,9 @@ article .content .gist .gist-meta{
   }
     .bio h5{
       margin: 0 0 10px 160px;
-      font-size: 1.125em;
-      font-style: italic;
+      font-size: 1.5em;
+      padding-top: 15px;
+      font-weight: 200;
     }
     .bio p{
       margin-left: 160px;
@@ -373,6 +373,7 @@ article .content .gist .gist-meta{
          -moz-border-radius: 50%;
               border-radius: 50%;
     }
+
 
 /* Footer
  *************************************/
