@@ -1,22 +1,25 @@
 <?php theme_include('header'); ?>
 
-<section class="content">
+<section role="main" class="container">
 
 	<?php if(has_posts()): ?>
 		<ul class="items">
 			<?php posts(); ?>
 			<li>
-				<article class="wrap">
-					<h1>
-						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-					</h1>
+				<article>
+					<header>
+						<h2>
+							<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
+						</h2>
+					</header>	
+					<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> 
 
 					<div class="content">
 						<?php echo Html::markdown(article_html()); ?>
 					</div>
 
 					<footer>
-						Posted <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> by <?php echo article_author('real_name'); ?>.
+						<!-- fill here -->
 					</footer>
 				</article>
 			</li>
