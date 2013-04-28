@@ -1,8 +1,7 @@
 Blog
 =====
 
-Three is the third iteration of my personal domain, [tonigemayel.com)](http://tonigemayel.com). It runs on [Anchor CMS](http://anchorcms.com), a super-simple,
-lightweight blog system. 
+Three is the third iteration of my personal domain, [tonigemayel.com](http://tonigemayel.com). It runs on [Anchor CMS](http://anchorcms.com), a super-simple, lightweight blog system. 
 
 Credit
 =====
