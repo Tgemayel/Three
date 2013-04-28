@@ -45,8 +45,8 @@
       <header role="banner">
 		    <div class="container">
 		      <section class="bio">
-						<img src="http://f.cl.ly/items/3M2d0z0F2X2G2Y2o183f/toni.jpg">
+						<a href="http://tonigemayel.com"><img src="http://f.cl.ly/items/3M2d0z0F2X2G2Y2o183f/toni.jpg"></a>
 							<h5>Toni Gemayel</h5>
-								<p> I cofounded <a href="http://www.banyan.co">Banyan</a> to change the way scientists works. Im passionate about design, startups, and entrepreneurship.</p>
+								<p> I cofounded <a href="http://www.banyan.co">Banyan</a> to change the way scientists work. Im passionate about design, startups, and entrepreneurship. Lets connect on <a href="http://twitter.com/twogiraffes">Twitter</a></p>
 				    </div>
 				  </header>
