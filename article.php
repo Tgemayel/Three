@@ -1,17 +1,13 @@
 <?php theme_include('header'); ?>
 
-		<section class="content wrap" id="article-<?php echo article_id(); ?>">
+		<section class="content">
 			<h1><?php echo article_title(); ?></h1>
 
 			<article>
 				<?php echo article_html(); ?>
 			</article>
 			
-			<section class="footnote">
-				<p>This article is my <?php echo numeral(article_id()); ?> oldest. It is <?php echo count_words(article_html()); ?> words long, and it’s got <?php echo total_comments() . pluralise(total_comments(), ' comment'); ?> for now. <?php echo article_custom_field('attribution'); ?></p>
-			</section>
-		</section>
-
+<!-- commenting out comments. So meta.
 		<?php if(comments_open()): ?>
 		<section class="comments">
 			<?php if(has_comments()): ?>
@@ -32,7 +28,7 @@
 				<?php endwhile; ?>
 			</ul>
 			<?php endif; ?>
-
+ 
 			<form id="comment" class="commentform wrap" method="post" action="<?php echo comment_form_url(); ?>#comment">
 				<?php echo comment_form_notifications(); ?>
 
@@ -55,7 +51,7 @@
 					<?php echo comment_form_button(); ?>
 				</p>
 			</form>
-
+-->
 		</section>
 		<?php endif; ?>
 
