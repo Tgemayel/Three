@@ -9,7 +9,7 @@
 				</header>
 
 					<section class="content">
-						<?php echo article_html(); ?>
+						<?php echo article_markdown(); ?>
 					</section>	
 					
 			</article>
