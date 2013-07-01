@@ -15,7 +15,7 @@
 					<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> 
 
 					<div class="content">
-						<?php echo Html::markdown(article_html()); ?>
+						<?php echo article_markdown(); ?>
 					</div>
 
 					<footer>
